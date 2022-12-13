@@ -1,0 +1,43 @@
+{% extends 'Store/main.html' %} {% load static %}
+{% block title %} About | {% endblock title %} {% block content %}
+
+<main>
+    <div id="fheader">
+        <h1>About AJU's Shelf</h1>
+    </div>
+    <div class="mflex">
+        <div class="foffer">
+            <h2>What we have to offer</h2>
+            <p>Hey! This is AJU's Shelf in this AJU is selling the books that he thinks can change your life so yeah.
+                <i><b>Haa Joking</b></i>
+                I just made this website for my practice and portfolio so welcome to this website and if you are a
+                recruiter
+                or a client please hire me!
+            </p>
+            <div class="">
+                <div class="wrapper">
+                    <div class="link_wrapper">
+                        <a href="{% url 'contact' %}">Contact us</a>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="qualitya">
+                <h3>Quality</h3>
+                <p>We offer quality over everything! Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel repellat
+                    impedit assumenda modi quaerat natus!</p>
+            </div>
+            <div class="ebooka">
+                <h3>E-Book Facility</h3>
+                <p>We provide E-book facility so if you prefer reading book online you can add to cart and purchase it right now
+                    in reasonable price <b>just joking</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
+                    atque!</p>
+            </div>
+        </div>
+        <div class="imga">
+            <img src="{% static 'images/aboutimg.jpg' %}" alt="" style="width: 600px; height: 700px;">
+        </div>
+    </div>
+</main>
+
+{% endblock content %} {% block footer %} {% endblock footer %}
